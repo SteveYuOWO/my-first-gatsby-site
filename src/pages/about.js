@@ -7,12 +7,12 @@ const AboutPage = () => {
   return (
     <main>
       <title>About Me</title>
-      <Category />
       <h1>About</h1>
       <div>
         <button onClick={() => setShowMe(!showMe)}>Show Me</button>
         {showMe && <p>Hi there! I'm the proud creator of this site</p>}
       </div>
+      <Category />
     </main>
   );
 };
