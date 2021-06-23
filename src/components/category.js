@@ -3,14 +3,17 @@ import { Link } from "gatsby";
 
 const Category = () => {
   return (
-    <ul>
-      <Link to="/">
-        <li>Index</li>
-      </Link>
-      <Link to="/about">
-        <li>About</li>
-      </Link>
-    </ul>
+    <div>
+      <h1>Link Navigation</h1>
+      <ul>
+        <Link to="/">
+          <li>Index</li>
+        </Link>
+        <Link to="/about">
+          <li>About</li>
+        </Link>
+      </ul>
+    </div>
   );
 };
 
