@@ -12,6 +12,9 @@ const Category = () => {
         <Link to="/about">
           <li>About</li>
         </Link>
+        <Link to="/metaInfo">
+          <li>MetaInfo</li>
+        </Link>
       </ul>
     </div>
   );

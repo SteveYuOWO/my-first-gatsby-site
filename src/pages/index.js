@@ -10,8 +10,8 @@ const IndexPage = () => {
       <StaticImage
         src="https://steveyuowo.com/static/media/profile.b272f5f5.png"
         alt="steve yu's animation profile"
-        width="200"
-        height="200"
+        width={200}
+        height={200}
       />
       <Category />
     </main>
