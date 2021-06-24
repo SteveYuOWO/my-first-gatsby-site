@@ -1,22 +1,8 @@
 import * as React from "react";
-import { useStaticQuery, graphql } from "gatsby";
+import { graphql } from "gatsby";
 import Category from "../components/category";
 
-const MetaInfo = () => {
-  const data = useStaticQuery(graphql`
-    query MyQuery {
-      site {
-        port
-        host
-        siteMetadata {
-          title
-          description
-          age
-          username
-        }
-      }
-    }
-  `);
+const MetaInfo = ({ data }) => {
   const siteMetadata = data.site.siteMetadata;
   return (
     <main>
@@ -49,5 +35,21 @@ const MetaInfo = () => {
     </main>
   );
 };
+
+// can only replaced by useStaticQuery
+export const query = graphql`
+  query MyQuery {
+    site {
+      port
+      host
+      siteMetadata {
+        title
+        description
+        age
+        username
+      }
+    }
+  }
+`;
 
 export default MetaInfo;
